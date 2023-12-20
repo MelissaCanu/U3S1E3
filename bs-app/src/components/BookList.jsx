@@ -1,22 +1,14 @@
-// import React, { Component } from "react";
-// import SingleBook from "./SingleBook";
+import React from "react";
+import SingleBook from "./SingleBook";
 
-// class BookList extends Component {
-// 	state = {
-// 		books: this.props.books || [],
-// 	};
-// 	render() {
-// 		return (
-// 			<div>
-// 				<h2>Elenco Libri</h2>
-// 				<div>
-// 					{this.state.books.map((book, index) => (
-// 						<SingleBook key={index} book={book} />
-// 					))}
-// 				</div>
-// 			</div>
-// 		);
-// 	}
-// }
+const BookList = ({ books }) => {
+	return (
+		<div>
+			{books.map((book) => (
+				<SingleBook key={book.asin} book={book} />
+			))}
+		</div>
+	);
+};
 
-// export default BookList;
+export default BookList;

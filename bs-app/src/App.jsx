@@ -4,10 +4,11 @@ import "./App.css";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/myFooter";
 import Welcome from "./components/Welcome";
-import MyGrid from "./components/AllTheBooks";
+// import MyGrid from "./components/AllTheBooks";
 /* ------------------------------------------------ */
 import horror from "./data/horror.json";
-import SingleBook from "./components/SingleBook";
+// import SingleBook from "./components/SingleBook";
+import BookList from "./components/BookList";
 
 function App() {
 	// const staticHorrorBook = horror[4];
@@ -17,6 +18,7 @@ function App() {
 			<Welcome name="GattoRude" fontSize="fs-2" textSize="fs-3" />
 			{/* <MyGrid /> */}
 			{/* <SingleBook book={staticHorrorBook} /> */}
+			<BookList books={horror} />
 			<MyFooter />
 		</div>
 	);

@@ -10,12 +10,12 @@ const MyGrid = () => (
 	<Container>
 		<Row>
 			{horror.map((item) => (
-				<Col key={item.id}>
-					<Card>
+				<Col className="mb-3" xs={6} xl={2} key={item.id}>
+					<Card className="h-100">
 						<Card.Img variant="top" src={item.img} alt={item.title} />
-						<Card.Body>
+						<Card.Body className="d-flex flex-column">
 							<Card.Title>{item.title}</Card.Title>
-							<Card.Text>{item.price + "$"}</Card.Text>
+							<Card.Text className="flex-grow-1">{item.price + "$"}</Card.Text>
 							<Button variant="primary">Buy</Button>
 						</Card.Body>
 					</Card>

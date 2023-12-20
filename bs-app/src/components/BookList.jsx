@@ -13,10 +13,15 @@ class BookList extends Component {
 	render() {
 		const { books } = this.props;
 		const { searchQuery } = this.state;
+		// const filteredBooks = books.filter((book) =>
+		// 	book.title.toLowerCase().includes(searchQuery.toLowerCase())
+		// );
+		// console.log("filteredBooks:", filteredBooks);
+		/* funziona in console, filtra in base all'input, ma non renderizza sulla pagina */
 
 		return (
-			<Row>
-				<Col xs={12}>
+			<Row className="mx-2">
+				<Col className="mb-3" xs={12}>
 					<Form.Control
 						type="text"
 						placeholder="Search book here"

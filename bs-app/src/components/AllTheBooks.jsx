@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const MyGrid = () => (
+const AllTheBooks = () => (
 	<Container>
 		<Row>
 			{horror.map((item) => (
@@ -25,4 +25,4 @@ const MyGrid = () => (
 	</Container>
 );
 
-export default MyGrid;
+export default AllTheBooks;
